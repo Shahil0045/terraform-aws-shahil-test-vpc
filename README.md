@@ -19,8 +19,8 @@ provider "aws" {
 }
 
 module "vpc" {
-    source = "./module/vpc"
-
+    source = "Shahil0045/shahil-test-vpc/aws"
+    version = "1.0.0"
     vpc_config = {
         vpc_name   = "my-custom-vpc"
         cidr_block = "10.0.0.0/16"
