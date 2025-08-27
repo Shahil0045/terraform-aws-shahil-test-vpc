@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "vpc" {
-    source = "./module/vpc"
+    source = "Shahil0045/shahil-test-vpc/aws"
 
     vpc_config = {
         vpc_name   = "my-custom-vpc"
